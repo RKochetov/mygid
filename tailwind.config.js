@@ -10,12 +10,21 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
+        "./node_modules/flowbite/**/*.js"
     ],
 
     theme: {
         extend: {
+            colors: {
+                'my-green': '#68904D',
+                'my-green1': '#14471E',
+                'my-gray': '#C8D2D1',
+                'my-oran-l': '#EE9B01',
+                'my-oran-d': '#DA6A00'
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                display: ['Oswald'],
             },
         },
     },
