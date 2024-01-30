@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/restzone', [\App\Http\Controllers\RestZoneController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
