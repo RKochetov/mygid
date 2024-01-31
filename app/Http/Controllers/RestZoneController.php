@@ -12,4 +12,9 @@ class RestZoneController extends Controller
         $rest_zones = RestZone::all();
         return view('restzone.index', compact('rest_zones'));
     }
+
+    public function show(RestZone $rest_zone)
+    {
+        return view('restzone.show', compact('rest_zone'));
+    }
 }
