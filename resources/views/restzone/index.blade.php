@@ -1,17 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite(['resources/css/app.css','resources/js/app.js'])
-    <title>Document</title>
-</head>
-<body class="bg-my-green">
+@extends('layouts.main')
+@section('content')
 @foreach($rest_zones as $rest_zone)
     <div
-        class="m-3 flex flex-col bg-white border border-gray-500 shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        class="mt-3 flex flex-col bg-white border border-gray-500 shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
         <img class="object-cover object-center md:w-54 md:h-40 md:m-2 md:rounded-none"
              src="/storage/Belarus_1.jpg" alt="">
         <div class="flex flex-col justify-between pl-4 leading-normal">
@@ -36,6 +27,4 @@
         </div>
     </div>
 @endforeach
-
-</body>
-</html>
+@endsection
