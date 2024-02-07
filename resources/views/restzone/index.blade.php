@@ -16,11 +16,11 @@
                 {{ $rest_zone->street }},
                 {{ $rest_zone->building }}
             </p>
-            <p>
-                <?php echo($rest_zone->description) ?>
-            </p>
+{{--            <p>--}}
+{{--                <?php echo($rest_zone->description) ?>--}}
+{{--            </p>--}}
             <div>
-                <a href="{{ route('rest_zone.show', $rest_zone->id) }}" class="inline-block focus:outline-none text-white bg-my-oran-l hover:bg-my-oran-d font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                <a href="{{ route('rest_zone.show', $rest_zone->id) }}" class="font-display inline-block focus:outline-none text-white bg-my-oran-l hover:bg-my-oran-d font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                     Подробнее...
                 </a>
             </div>
