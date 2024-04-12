@@ -37,17 +37,12 @@
                 </li>
                 <li>
                     <a href="#" class="block py-2 px-3 text-gray-200 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-my-oran-l md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                        Магазин
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 text-gray-200 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-my-oran-l md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                         О нас
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 px-3 text-gray-200 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-my-oran-l md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                        Контакты
+                    <a href="#" class="block py-2 px-3 text-gray-200 hover:bg-my-oran-d md:rounded-full md:bg-my-oran-l md:border-0 md:hover:text-white md:py-0.5 md:px-3">
+                        Добавить место в каталог
                     </a>
                 </li>
 
@@ -103,7 +98,7 @@
         <div id="mega-menu-full-cta" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
             <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                 <li>
-                    <a href="{{ route('rest_zone.index') }}" class="block py-2 px-3 text-my-oran-l hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-my-oran-l md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">
+                    <a href="{{ route('rest_zone.index') }}" class="block py-2 px-3 {{ request()->is('rest_zone') ? 'text-my-oran-l' : 'text-gray-200' }} hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-my-oran-l md:p-0 " aria-current="page">
                         Зоны отдыха
                     </a>
                 </li>
@@ -132,6 +127,7 @@
                     </a>
                 </li>
             </ul>
+
         </div>
     </div>
     <div id="mega-menu-full-cta-dropdown" class="bg-white hidden border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600">
